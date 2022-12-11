@@ -72,8 +72,8 @@ def encryption(p, q, m):
         p_prime = solve_lin_cong(p, 1, (q - 1))
         q_prime = solve_lin_cong(q, 1, (p - 1))
 
-        print("P : ", p_prime)
-        print("Q : ", q_prime)
+        print("P' : ", p_prime)
+        print("Q' : ", q_prime)
 
         # encrypted message
         c = modular_exponentiation(m, pk_n, pk_n)
