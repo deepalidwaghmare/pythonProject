@@ -64,7 +64,7 @@ def modular_exponentiation(base, exponent, modulus):
 def encryption(p, q, m):
     if relative_prime(p, q - 1) and relative_prime(q, p - 1):
         print("coprime primes")
-        pk_n = p * q  # public key n
+        pk_n = p * q  # public key
         print("public key ", pk_n)
 
         # solve congruence
